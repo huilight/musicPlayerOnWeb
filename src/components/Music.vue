@@ -55,7 +55,7 @@ export default{
 				that.name = name;
 				that.singer = singer;
 				console.log(that.musicURL);
-				that.$emit('play', that.musicURL, that.name, that.singer)
+				that.$emit('play', that.musicURL, id, that.name, that.singer)
 			});
 		}
 	}

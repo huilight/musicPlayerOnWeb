@@ -23,7 +23,7 @@
 			<div class="lyric">{{ lyric }}&nbsp;</div>
 			<IconTest :pos="pos" id = "icontest" @changeCurrentTime="changeCurrentTime" @pause="pause"></IconTest>
 			<Search class="search" @togleSearch="searchShow=!searchShow"></Search>
-			<Music class="search-box" v-show="searchShow" @play="playFromUrl"></Music>
+			<Music class="search-box" v-show="searchShow" @blur="searchShow=false" @play="playFromUrl"></Music>
 		</div>
 	</div>
 </template>

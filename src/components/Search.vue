@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<IconBase @click="$emit('togleSearch')"><SearchIcon></SearchIcon></IconBase>
+		<IconBase width="20px" height="20px" @click="$emit('togleSearch')"><SearchIcon></SearchIcon></IconBase>
 	</div>
 	
 </template>

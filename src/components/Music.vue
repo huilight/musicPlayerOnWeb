@@ -6,7 +6,7 @@
 		<!-- <audio :src="musicURL" autoplay controls></audio> -->
 		<div class="search-box">
 			<!-- <label for="">搜索： -->
-			<input type="text" @input="value=$event.target.value" v-on:keydown.enter="search">
+			<input type="text" @input="value=$event.target.value" v-on:keydown.enter="search" @blur="$emit('blur')">
 			</label>
 		</div>
 		<div>
